@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>LEGO Sets</title>
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body class="bg-gray-100">
+ 
+  <nav class="bg-white shadow-md py-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="/" class="text-2xl font-bold text-gray-800">LEGO Sets</a>
+      <div>
+
+
+        <a href="./views/about" class="text-gray-800 px-4 hover:text-blue-600">About</a>
+        <details class="relative inline-block text-left">
+          <summary class="inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 cursor-pointer">
+            Theme
+          </summary>
+        
+          <div class="absolute right-0 z-10 w-56 mt-2 origin-top-right bg-white border border-gray-200 rounded-md shadow-lg">
+            <div class="py-1" role="menu" aria-orientation="vertical">
+              <a href="./lego/sets?theme=Town" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Town</a>
+              <a href="./lego/sets?theme=Playhouse" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Playhouse</a>
+              <a href="./lego/sets?theme=Supplemental" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Supplemental</a>
+            </div>
+          </div>
+        </details>
+        
+
+        <script>
+          function toggleDropdown() {
+            var dropdown = document.getElementById("themeDropdown");
+            dropdown.classList.toggle("hidden");
+          }
+        </script>
+
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="bg-cover bg-center h-96" style="background-image: url('images/hero-image.jpg');">
+    <div class="h-full flex items-center justify-center bg-black bg-opacity-50">
+      <div class="hero-contentflex flex-col text-center space-y-16">
+       <h1 class="text-white text-4xl md:text-6xl font-bold">Explore the World of LEGO</h1>
+    
+       <a href="/lego/sets" class="btn btn-primary">Explore Now</a>
+       
+    </div>
+  </div>
+  </section>
+
+  
+  <section class="container mx-auto py-12">
+    <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Popular LEGO Sets</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <img src="https://cdn.rebrickable.com/media/sets/033-1.jpg" alt="Lego Set 1" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold text-gray-800">Farm Animals</h3>
+          <p class="mt-4 text-gray-600">Re-released in 1982 as set 2641-1</p>
+          <br>
+          <a href="/lego/sets/033-1" class="btn btn-primary">View Details</a>
+        </div>
+      </div>
+     
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <img src="https://cdn.rebrickable.com/media/sets/032-1.jpg" alt="Lego Set 2" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold text-gray-800">Living Room</h3>
+          <p class="mt-4 text-gray-600">As similar set, 2630-1﻿, was released in different regions, using the same inventory but with a different Set Number.</p>
+          <br>
+          <a href="/lego/sets/032-1" class="btn btn-primary">View Details</a>
+        </div>
+      </div>
+      
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <img src="https://cdn.rebrickable.com/media/sets/041-2.jpg" alt="Lego Set 3" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold text-gray-800">Playhouse</h3>
+          <p class="mt-4 text-gray-600">This set was released in America (USA/CAN) by Samsonite in 1964.</p>
+          <br>
+            <a href="/lego/sets/041-2" class="btn btn-primary">
+              View Details</a>
+            
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+</body>
+
+</html>

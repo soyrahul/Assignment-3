@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Page Not Found - LEGO Sets</title>
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body class="bg-gray-100">
+  
+  <nav class="bg-white shadow-md py-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="/" class="text-2xl font-bold text-gray-800">LEGO Sets</a>
+      <div class="menu flex space-x-4"> 
+        <a href="/views/about" class="menu-item">About</a>
+        <div class="relative inline-block text-left">
+            <button onclick="toggleDropdown()" class="inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none theme-btn">Theme</button>
+            <div id="themeDropdown" class="hidden absolute right-0 z-10 w-56 mt-2 origin-top-right bg-white border border-gray-200 rounded-md shadow-lg">
+                <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu"></div>
+                <a href="/lego/sets?theme=Town" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Town</a>
+                <a href="/lego/sets?theme=Playhouse" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Playhouse</a>
+                <a href="/lego/sets?theme=Supplemental" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Supplemental</a>
+            </div>
+        </div>
+    </div>
+    
+    </div>
+  </nav>
+
+  <script>
+    function toggleDropdown() {
+      var dropdown = document.getElementById("themeDropdown");
+      dropdown.classList.toggle("hidden");
+    }
+  </script>
+
+  
+  <div class="container mx-auto not-found">
+
+    <div class="hero bg-base-200 rounded-lg p-6">
+      <div class="hero-content text-center ">
+        <div class="max-w-md">
+          <h1 class="text-5xl font-bold">404</h1>
+
+          <p class="py-6">The page you are looking for doesn't exist.</p>
+          <p class="py-6">You might want to check 
+            <a href="/" class="btn btn-primary mt-6">Home</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+</div>
+
+</body>
+
+</html>
